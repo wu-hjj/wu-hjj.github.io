@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://wu-hjj.github.io/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22/%3E">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
       <img class="portrait" src="assets/portrait.jpg" alt="Hongjin Wu" width="208" height="208">
       <h1 class="name">Hongjin Wu</h1>
       <p>Hi! My name is Hongjin Wu. I am a postdoctoral researcher working with <a href="https://homepages.cwi.nl/~monique/">Monique Laurent</a> in the <a href="https://www.cwi.nl/en/research/networks-and-optimization/">Networks &amp; Optimization group</a> at CWI in Amsterdam. Previously, I recevied my Ph.D. in Oct. 2025 at ETH Zürich under the supervision of <a href="https://scholar.google.com/citations?user=fmmZrwgAAAAJ&amp;hl=en">Ulrik Brandes</a>, with <a href="https://people.math.ethz.ch/~abandeira/">Afonso Bandeira</a> as my second advisor.</p>
-      <p><strong>I am on the job market for postdoctoral positions.</strong></p>
+      <p class="job-market"><strong>I am on the job market for postdoctoral positions.</strong></p>
       <p><strong>E-Mail:</strong> <a href="mailto:hongjin-wu@outlook.com">hongjin-wu (at) outlook (dot) com</a></p>
     </header>
     <hr>
@@ -39,10 +39,6 @@
               <p class="authors">Hongjin Wu, Ulrik Brandes</p>
               <p class="venue">Submitted · arXiv:2512.21935</p>
               <div class="publication-links"><a href="https://arxiv.org/abs/2512.21935">arXiv</a><a href="https://arxiv.org/pdf/2512.21935">PDF</a></div>
-              <figure class="paper-figure">
-                <a href="assets/papers/graph-skeletons-figure1.png" aria-label="Open full-size figure"><img src="assets/papers/graph-skeletons-figure1.png" width="1281" height="366" alt="A rooted tree, its induced comparability graph, and its directed transitive closure." loading="lazy" decoding="async"></a>
-                <figcaption>Figure 1 · <a href="https://arxiv.org/abs/2512.21935v3">Source</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (cropped)</figcaption>
-              </figure>
               <details class="publication-abstract">
                 <summary>Research summary</summary>
                 <p>We study the homogeneous Kuramoto model on a graph and the associated nonconvex optimization problem <span class="math-expression"><math xmlns="http://www.w3.org/1998/Math/MathML" aria-label="min over theta in R to the n of minus one half times the sum for 1 less than or equal to i,j less than or equal to n of A i j times cosine of theta i minus theta j"><mrow><munder><mo>min</mo><mrow><mi>𝜽</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></munder><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><munder><mo>∑</mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>≤</mo><mi>n</mi></mrow></munder><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi mathvariant="normal">cos</mi><mo>(</mo><msub><mi>θ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>θ</mi><mi>j</mi></msub><mo>)</mo></mrow></math></span>. The objective defines an energy over configurations of points on the unit circle and serves as a Lyapunov potential for the dynamics. We prove that every connected quasi-threshold graph is second-order globally synchronizing: every second-order stationary point is a global minimizer corresponding to full synchronization. Consequently, the dynamics converge to full synchronization from almost every initial condition. These graphs are precisely the comparability graphs of partially ordered sets induced by rooted trees. Viewing these trees as graph skeletons, we establish an upward propagation mechanism: synchronization within each child subtree forces the parent and all its descendants to synchronize. The argument proceeds from the leaves to the root and relies on phasor geometry and second-order optimality conditions. Our result provides a structural route to global synchronization that complements existing results based on minimum-degree or spectral proximity to complete graphs.</p>
@@ -56,10 +52,6 @@
               <p class="authors">Hongjin Wu, Ulrik Brandes</p>
               <p class="venue">Submitted · arXiv:2511.12646</p>
               <div class="publication-links"><a href="https://arxiv.org/abs/2511.12646">arXiv</a><a href="https://arxiv.org/pdf/2511.12646">PDF</a></div>
-              <figure class="paper-figure">
-                <a href="assets/papers/threshold-graphs-figure3.png" aria-label="Open full-size figure"><img src="assets/papers/threshold-graphs-figure3.png" width="1437" height="321" alt="Four connected threshold graphs on 19 vertices, from a star graph to a complete graph." loading="lazy" decoding="async"></a>
-                <figcaption>Figure 3 · <a href="https://arxiv.org/abs/2511.12646v6">Source</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (cropped)</figcaption>
-              </figure>
               <details class="publication-abstract">
                 <summary>Research summary</summary>
                 <p>Given a graph <var>G</var> with adjacency matrix <var>A</var>, consider the homogeneous Kuramoto energy <span class="math-expression"><math xmlns="http://www.w3.org/1998/Math/MathML" aria-label="E sub G of theta is defined as one half times the sum for 1 less than or equal to i,j less than or equal to n of A i j times 1 minus cosine of theta i minus theta j"><mrow><msub><mi>E</mi><mi>G</mi></msub><mo>(</mo><mi>𝜽</mi><mo>)</mo><mo>:=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><munder><mo>∑</mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>≤</mo><mi>n</mi></mrow></munder><msub><mi>A</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>(</mo><mn>1</mn><mo>−</mo><mi mathvariant="normal">cos</mi><mo>(</mo><msub><mi>θ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>θ</mi><mi>j</mi></msub><mo>)</mo><mo>)</mo></mrow></math></span>. We call <var>G</var> <em>second-order globally synchronizing</em> if every second-order stationary point of <var>E<sub>G</sub></var> is fully synchronized. This property implies <em>global synchronization</em>, namely that, up to a measure-zero set of initial conditions, trajectories of the Kuramoto model converge to a fully synchronized state. A fundamental graph-theoretic question is to identify which graph structures have this property. Existing guarantees for global synchronization typically require large minimum degree which forces the graph to be very dense, or good expansion properties. In this paper, we show that synchronization can also arise from a different, purely structural mechanism. More precisely, we prove that threshold graphs, a classical recursively defined graph class, are second-order globally synchronizing, and hence globally synchronizing. Thus, globally synchronizing graphs need not be very dense, have large minimum degree, or satisfy strong expansion-type conditions. The proof exploits the recursive construction of threshold graphs: local phasor constraints imposed by second-order stationarity are propagated along the construction sequence until full synchronization is forced.</p>
@@ -72,10 +64,6 @@
               <h3>Global synchronization of inductively defined graph classes: a local-to-global perspective</h3>
               <p class="authors">Hongjin Wu</p>
               <p class="venue">PhD Thesis · ETH Zürich</p>
-              <figure class="paper-figure">
-                <a href="assets/papers/thesis-cograph-schematic.svg" aria-label="Open full-size figure"><img src="assets/papers/thesis-cograph-schematic.svg" width="800" height="440" alt="Schematic illustration of an inductive cograph construction using union and join." loading="lazy" decoding="async"></a>
-                <figcaption>Schematic illustration</figcaption>
-              </figure>
             </div>
           </li>
         </ol>
@@ -88,10 +76,6 @@
               <p class="authors">Hongjin Wu, Xingfei Xiang</p>
               <p class="venue">Mathematical Methods in the Applied Sciences</p>
               <div class="publication-links"><a href="https://doi.org/10.1002/mma.9766">Journal article</a></div>
-              <figure class="paper-figure">
-                <a href="assets/papers/pcurl-domain-schematic.svg" aria-label="Open full-size figure"><img src="assets/papers/pcurl-domain-schematic.svg" width="800" height="440" alt="Schematic illustration of a convex domain and an illustrative vector field." loading="lazy" decoding="async"></a>
-                <figcaption>Schematic illustration</figcaption>
-              </figure>
             </div>
           </li>
         </ol>
@@ -104,10 +88,6 @@
               <p class="authors">Hongjin Wu, Danqing Shi, Nan Chen, Yang Shi, Zhuochen Jin, Nan Cao</p>
               <p class="venue">Journal of Visualization</p>
               <div class="publication-links"><a href="https://doi.org/10.1007/s12650-019-00617-x">Journal article</a></div>
-              <figure class="paper-figure">
-                <a href="assets/papers/visact.png" aria-label="Open full-size figure"><img src="assets/papers/visact.png" width="2126" height="1380" alt="VisAct system interface with semantic actions, data views, and a visualization design canvas." loading="lazy" decoding="async"></a>
-                <figcaption>Figure 2 · <a href="https://sdq.github.io/visact/">Project page</a></figcaption>
-              </figure>
             </div>
           </li>
           <li class="publication">
@@ -117,10 +97,6 @@
               <p class="authors">Danqing Shi, Yang Shi, Xinyue Xu, Nan Chen, Siwei Fu, Hongjin Wu, Nan Cao</p>
               <p class="venue">IEEE Symposium on Visualization in Data Science</p>
               <div class="publication-links"><a href="https://arxiv.org/abs/1908.02502">arXiv</a><a href="https://arxiv.org/pdf/1908.02502">PDF</a></div>
-              <figure class="paper-figure">
-                <a href="assets/papers/chart-sequencing-system.png" aria-label="Open full-size figure"><img src="assets/papers/chart-sequencing-system.png" width="1233" height="794" alt="Visualization chart sequencing interface with chart recommendations and action history." loading="lazy" decoding="async"></a>
-                <figcaption>Figure 4 · <a href="https://arxiv.org/abs/1908.02502">Source</a> (cropped)</figcaption>
-              </figure>
             </div>
           </li>
         </ol>
