@@ -8,7 +8,7 @@ A responsive academic homepage built with plain HTML, CSS, and a small progressi
 
 - Edit `index.html` to update the biography, publications, talks, links, and experience.
 - Edit `styles.css` to change the appearance.
-- Replace `assets/portrait.png` to update the portrait.
+- Replace `assets/portrait.jpg` to update the portrait.
 - `script.js` highlights the current navigation section; the content works without JavaScript.
 - Update the date in `sitemap.xml` when substantially changing the content.
 
