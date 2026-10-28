@@ -110,19 +110,7 @@ section {
 }
 #about { margin-bottom: 12px; padding-top: 0; border-top: 0; }
 .job-market { margin-top: 8px; color: #c00000; }
-.research-video { margin: 2px 0 0; }
-.research-video > summary {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  color: #0000ee;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.research-video > summary::-webkit-details-marker { display: none; }
-.research-video > summary:hover { text-decoration-thickness: 2px; }
+.research-video { margin: 6px 0 0; }
 .research-video video { display: block; width: 480px; max-width: 100%; height: auto; margin: 8px 0 0; }
 .page-contents {
   display: block;
