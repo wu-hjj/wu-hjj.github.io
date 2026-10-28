@@ -86,7 +86,7 @@ hr {
   height: 180px;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(1);
+  filter: none;
   margin: 2px 0 14px 32px;
   border: 0;
   border-radius: 0;
@@ -170,10 +170,24 @@ section {
 .year { display: inline; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 7px 20px; margin: 0; white-space: normal; }
 .publication-links a { color: #000000; text-decoration: underline; text-decoration-color: #000000; }
-.publication-abstract { display: block; margin: 13px 0 0; font-size: 17px; font-weight: 400; }
+.publication-abstract { display: block; margin: 13px 0 0; font-size: 15px; font-weight: 400; }
 .publication-abstract summary { display: list-item; width: fit-content; max-width: 100%; cursor: pointer; font-weight: 400; text-decoration: none; list-style: disclosure-closed inside; }
 .publication-abstract[open] > summary { list-style-type: disclosure-open; }
-.publication-abstract p { margin: 9px 0 0; font-size: 17px; font-weight: 400; line-height: 1.5; }
+.publication-abstract p { margin: 9px 0 0; font-size: 14px; font-weight: 400; line-height: 1.55; }
+.paper-figure { margin: 16px 0 9px; padding: 0; background: #ffffff; }
+.paper-figure > a { display: block; width: fit-content; max-width: 100%; }
+.paper-figure img { display: block; width: auto; height: auto; max-width: 100%; max-height: 180px; object-fit: contain; object-position: left center; background: #ffffff; }
+.paper-figure figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; color: #000000; }
+.activity-list { display: block; margin: 0 0 26px; padding: 0; list-style: none; }
+.activity { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 26px; margin: 0; padding: 20px 0; border-bottom: 1px solid #000000; }
+.activity-meta { padding-top: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.5; }
+.activity-meta time { display: block; margin-bottom: 8px; }
+.activity-meta span { display: block; font-size: 13px; }
+.activity-body { min-width: 0; font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.5; }
+.activity-body h3 { margin: 0 0 9px; font-family: inherit; font-size: 20px; line-height: 1.4; }
+.activity-body p { margin: 0 0 9px; }
+.activity-body ul { margin: 8px 0 0; padding-left: 21px; }
+.activity-body li { margin: 0 0 5px; }
 
 .talk-list, .experience-list, .project-list, #empirical-research ul {
   display: block;
@@ -225,7 +239,15 @@ section {
   .publication { grid-template-columns: 60px minmax(0, 1fr); gap: 14px; padding: 20px 0; }
   .publication-meta { font-size: 14px; }
   .pub-type { font-size: 12px; }
-  .publication-body, .publication-body h3, .publication-abstract, .publication-abstract p { font-size: 16px; }
+  .publication-body, .publication-body h3 { font-size: 16px; }
+  .publication-abstract { font-size: 15px; }
+  .publication-abstract p { font-size: 14px; }
+  .paper-figure img { max-height: 160px; }
+  .activity-list { padding: 0; }
+  .activity { grid-template-columns: 60px minmax(0, 1fr); gap: 14px; }
+  .activity-meta { font-size: 14px; }
+  .activity-meta span { font-size: 12px; }
+  .activity-body, .activity-body h3 { font-size: 16px; }
   .publication-body h3 { line-height: 1.45; }
   .subsection-title { font-size: 12px; }
   section { padding-top: 17px; margin-bottom: 23px; }
@@ -245,7 +267,7 @@ section {
   .page { max-width: none; width: 100%; margin: 0; padding: 0; }
   .skip-link, .page-contents { display: none; }
   .profile-header { display: flow-root; }
-  .portrait { float: right; width: 100px; height: 100px; margin: 0 0 10px 24px; filter: grayscale(1); }
+  .portrait { float: right; width: 100px; height: 100px; margin: 0 0 10px 24px; filter: none; }
   .name { font-size: 25pt; }
   h2 { font-size: 17pt; }
   h3 { font-size: 13pt; }
@@ -254,7 +276,12 @@ section {
   #about { padding-top: 0; border-top: 0; }
   .publication, .talk-list li, .experience-list li, .project-list li, #empirical-research li, .closing-quote { break-inside: avoid; }
   .publication { grid-template-columns: 62px minmax(0, 1fr); gap: 18px; margin: 0; padding: 13px 0; }
-  .publication-body, .publication-abstract, .publication-abstract p { font-size: 11pt; }
+  .publication-body, .publication-abstract { font-size: 11pt; }
+  .publication-abstract p { font-size: 10pt; }
+  .activity { grid-template-columns: 62px minmax(0, 1fr); gap: 18px; padding: 13px 0; break-inside: avoid; }
+  .activity-body { font-size: 11pt; }
+  .activity-body h3 { font-size: 12pt; }
+  .activity-meta { font-size: 10pt; }
   .publication-body h3 { font-size: 12pt; }
   .publication-meta { font-size: 10pt; }
   .pub-type { font-size: 9pt; }

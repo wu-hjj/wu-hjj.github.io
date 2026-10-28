@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic of an inductive cograph construction</title>
+  <desc id="desc">An original schematic, not a figure from the doctoral thesis. A cotree has a join at the root and two union children, each with two single-vertex leaves. Joining the two independent pairs constructs K two two, drawn as a four-cycle. This is a precise illustrative example of inductively defined cographs, not a reproduction of an embargoed thesis figure.</desc>
+  <metadata>Illustration created for Hongjin Wu's academic homepage. Topic source: public abstract at https://doi.org/10.3929/ethz-c-000789575 . This is a new schematic, not a published figure.</metadata>
+  <defs><marker id="construction-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#000000"/></marker></defs>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <g fill="#000000" font-family="Times New Roman, Times, serif">
+    <text x="32" y="38" font-size="24">Inductive construction of a cograph</text>
+    <g fill="none" stroke="#000000" stroke-width="2">
+      <path d="M 190 96 L 105 185 M 190 96 L 275 185 M 105 185 L 65 278 M 105 185 L 145 278 M 275 185 L 235 278 M 275 185 L 315 278"/>
+      <path d="M 369 210 L 443 210" marker-end="url(#construction-arrow)"/>
+      <path d="M 620 104 L 730 210 L 620 316 L 510 210 Z"/>
+    </g>
+    <g fill="#ffffff" stroke="#000000" stroke-width="2">
+      <circle cx="190" cy="96" r="15"/><circle cx="105" cy="185" r="15"/><circle cx="275" cy="185" r="15"/>
+    </g>
+    <g text-anchor="middle" font-size="23"><text x="190" y="103">∨</text><text x="105" y="192">∪</text><text x="275" y="192">∪</text></g>
+    <g><circle cx="65" cy="278" r="6"/><circle cx="145" cy="278" r="6"/><circle cx="235" cy="278" r="6"/><circle cx="315" cy="278" r="6"/>
+      <circle cx="620" cy="104" r="6"/><circle cx="730" cy="210" r="6"/><circle cx="620" cy="316" r="6"/><circle cx="510" cy="210" r="6"/>
+    </g>
+    <g font-size="18" text-anchor="middle"><text x="65" y="306">1</text><text x="145" y="306">2</text><text x="235" y="306">3</text><text x="315" y="306">4</text>
+      <text x="620" y="81">1</text><text x="753" y="216">3</text><text x="620" y="344">2</text><text x="487" y="216">4</text>
+    </g>
+    <text x="190" y="364" text-anchor="middle" font-size="18">Cotree: union and join</text>
+    <text x="620" y="378" text-anchor="middle" font-size="23">K₂,₂</text>
+    <text x="400" y="419" text-anchor="middle" font-size="17">Schematic illustration · (K₁ ∪ K₁) ∨ (K₁ ∪ K₁) = K₂,₂</text>
+  </g>
+</svg>
