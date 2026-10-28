@@ -33,7 +33,7 @@ a:focus-visible, summary:focus-visible {
 }
 button, input, textarea, select { font: inherit; }
 img { max-width: 100%; }
-p { margin: 0 0 0.8em; }
+p { margin: 0 0 0.55em; }
 h1, h2, h3 {
   color: #000000;
   font-family: inherit;
@@ -41,15 +41,15 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 h1 { font-size: 34px; }
-h2 { margin: 0 0 14px; font-size: 24px; }
-h3 { margin: 21px 0 11px; font-size: 19px; }
+h2 { margin: 0 0 10px; font-size: 24px; }
+h3 { margin: 16px 0 6px; font-size: 19px; }
 strong { font-weight: bold; }
-ul, ol { margin: 10px 0 18px; padding-left: 28px; }
+ul, ol { margin: 8px 0 12px; padding-left: 28px; }
 li { padding-left: 1px; }
 hr {
   clear: both;
   height: 0;
-  margin: 14px 0 22px;
+  margin: 10px 0 14px;
   border: 0;
   border-top: 1px solid #000000;
 }
@@ -71,7 +71,7 @@ hr {
   display: block;
   width: 100%;
   max-width: 1100px;
-  margin: 24px auto;
+  margin: 20px auto;
   padding: 0 24px;
 }
 .profile-header {
@@ -87,12 +87,12 @@ hr {
   object-fit: cover;
   object-position: center;
   filter: none;
-  margin: 2px 0 14px 32px;
+  margin: 2px 0 10px 26px;
   border: 0;
   border-radius: 0;
   background: #ffffff;
 }
-.name { margin: 0 0 13px; font-size: 34px; }
+.name { margin: 0 0 10px; font-size: 34px; }
 .position { margin-bottom: 13px; }
 .contact { margin-bottom: 10px; line-height: 1.5; }
 .site-nav { margin: 0 0 18px; }
@@ -103,13 +103,27 @@ main, section, nav, footer { min-width: 0; }
 main { display: block; width: 100%; }
 section {
   display: block;
-  margin: 0 0 25px;
-  padding: 19px 0 0;
+  margin: 0 0 17px;
+  padding: 13px 0 0;
   border-top: 1px solid #000000;
   scroll-margin-top: 18px;
 }
-#about { margin-bottom: 18px; padding-top: 0; border-top: 0; }
-.job-market { margin-top: 12px; color: #c00000; }
+#about { margin-bottom: 12px; padding-top: 0; border-top: 0; }
+.job-market { margin-top: 8px; color: #c00000; }
+.research-video { margin: 2px 0 0; }
+.research-video > summary {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  color: #0000ee;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.research-video > summary::-webkit-details-marker { display: none; }
+.research-video > summary:hover { text-decoration-thickness: 2px; }
+.research-video video { display: block; width: 480px; max-width: 100%; height: auto; margin: 8px 0 0; }
 .page-contents {
   display: block;
   margin: 20px 0 0;
@@ -122,68 +136,71 @@ section {
 .contents-list li { display: list-item; margin: 1px 0; }
 .page-contents + section { border-top: 0; }
 
-.section-heading { display: block; margin: 0 0 14px; }
+.section-heading { display: block; margin: 0 0 10px; }
 .section-heading h2 { margin: 0; }
 .subsection-title {
-  margin: 25px 0 9px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  margin: 16px 0 6px;
+  font-family: inherit;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
 }
-.publication-list { display: block; list-style: none; margin: 0 0 26px; padding: 0; }
+.publication-list { display: block; list-style: none; margin: 0 0 14px; padding: 0; }
 .publication {
   display: grid;
   grid-template-columns: 90px minmax(0, 1fr);
-  gap: 26px;
+  gap: 22px;
   margin: 0;
-  padding: 20px 0;
+  padding: 11px 0;
   border-bottom: 1px solid #000000;
 }
 .publication-meta {
   padding-top: 3px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 15px;
   line-height: 1.5;
 }
-.pub-year { display: block; margin-bottom: 8px; font-weight: 400; }
+.pub-year { display: block; margin-bottom: 4px; font-weight: 400; }
 .pub-type { display: block; font-size: 13px; }
 .publication-body {
   min-width: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 17px;
   line-height: 1.5;
 }
 .publication-body h3 {
-  margin: 0 0 9px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  margin: 0 0 5px;
+  font-family: inherit;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.3;
 }
-.publication-body h3 a { text-decoration: none; }
+.publication-body h3 a,
+.publication-body h3 a:visited,
+.publication-body h3 a:hover,
+.publication-body h3 a:active { color: #000000; text-decoration: none; }
 .publication-body h3 a:hover { text-decoration: underline; }
 .citation { display: block; margin: 0; }
-.authors, .venue { display: block; margin: 0 0 10px; }
+.authors, .venue { display: block; margin: 0 0 4px; }
 .year { display: inline; }
-.publication-links { display: flex; flex-wrap: wrap; gap: 7px 20px; margin: 0; white-space: normal; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 5px 16px; margin: 0; white-space: normal; }
 .publication-links a { color: #0000ee; text-decoration: underline; text-decoration-color: currentColor; }
-.publication-abstract { display: block; margin: 13px 0 0; font-size: 15px; font-weight: 400; }
+.publication-abstract { display: block; margin: 6px 0 0; font-size: 15px; font-weight: 400; }
 .publication-abstract summary { display: list-item; width: fit-content; max-width: 100%; cursor: pointer; font-weight: 400; text-decoration: none; list-style: disclosure-closed inside; }
 .publication-abstract[open] > summary { list-style-type: disclosure-open; }
-.publication-abstract p { margin: 9px 0 0; font-size: 14px; font-weight: 400; line-height: 1.55; }
-.activity-list { display: block; margin: 0 0 26px; padding: 0; list-style: none; }
-.activity { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 26px; margin: 0; padding: 20px 0; border-bottom: 1px solid #000000; }
-.activity-meta { padding-top: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.5; }
-.activity-meta time { display: block; margin-bottom: 8px; }
+.publication-abstract p { margin: 6px 0 0; font-size: 14px; font-weight: 400; line-height: 1.5; }
+.activity-list { display: block; margin: 0 0 14px; padding: 0; list-style: none; }
+.activity { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 22px; margin: 0; padding: 11px 0; border-bottom: 1px solid #000000; }
+.activity-meta { padding-top: 3px; font-family: inherit; font-size: 15px; line-height: 1.5; }
+.activity-meta time { display: block; margin-bottom: 4px; }
 .activity-meta span { display: block; font-size: 13px; }
-.activity-body { min-width: 0; font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 1.5; }
-.activity-body h3 { margin: 0 0 9px; font-family: inherit; font-size: 20px; line-height: 1.4; }
-.activity-body p { margin: 0 0 9px; }
-.activity-body ul { margin: 8px 0 0; padding-left: 21px; }
-.activity-body li { margin: 0 0 5px; }
+.activity-body { min-width: 0; font-family: inherit; font-size: 17px; line-height: 1.5; }
+.activity-body h3 { margin: 0 0 5px; font-family: inherit; font-size: 18px; line-height: 1.3; }
+.activity-body p { margin: 0 0 4px; }
+.activity-body ul { margin: 6px 0 0; padding-left: 21px; }
+.activity-body li { margin: 0 0 3px; }
 
 .talk-list, .experience-list, .project-list, #empirical-research ul {
   display: block;
@@ -199,7 +216,7 @@ section {
 .talk-list time { display: inline; font: inherit; white-space: normal; }
 .experience-list p, .project-list p { margin: 4px 0 0; }
 .closing-quote {
-  margin: 24px 0 18px;
+  margin: 16px 0 12px;
   padding: 0;
   border: 0;
   color: #000000;
@@ -214,8 +231,8 @@ section {
 .closing-quote p { margin: 0; }
 .site-footer {
   display: block;
-  margin: 30px 0 0;
-  padding: 14px 0 4px;
+  margin: 20px 0 0;
+  padding: 10px 0 4px;
   border-top: 1px solid #000000;
   color: #000000;
   font-size: 15px;
@@ -232,7 +249,7 @@ section {
   h3 { font-size: 19px; }
   ul, ol, .contents-list, .talk-list, .experience-list, .project-list, #empirical-research ul { padding-left: 24px; }
   .publication-list { padding: 0; }
-  .publication { grid-template-columns: 60px minmax(0, 1fr); gap: 14px; padding: 20px 0; }
+  .publication { grid-template-columns: 60px minmax(0, 1fr); gap: 14px; padding: 11px 0; }
   .publication-meta { font-size: 14px; }
   .pub-type { font-size: 12px; }
   .publication-body, .publication-body h3 { font-size: 16px; }
@@ -244,8 +261,8 @@ section {
   .activity-meta span { font-size: 12px; }
   .activity-body, .activity-body h3 { font-size: 16px; }
   .publication-body h3 { line-height: 1.45; }
-  .subsection-title { font-size: 12px; }
-  section { padding-top: 17px; margin-bottom: 23px; }
+  .subsection-title { font-size: 13px; }
+  section { padding-top: 12px; margin-bottom: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
