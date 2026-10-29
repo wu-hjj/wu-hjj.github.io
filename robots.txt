@@ -1,3 +1,7 @@
+User-agent: Googlebot-Image
+Disallow: /assets/portrait-variant.jpg
+Disallow: /assets/portrait.jpg
+
 User-agent: *
 Allow: /
 

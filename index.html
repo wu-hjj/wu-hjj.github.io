@@ -6,6 +6,7 @@
   <title>Hongjin Wu</title>
   <meta name="description" content="An academic homepage featuring research, publications, presentations, and experience.">
   <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noimageindex">
   <link rel="canonical" href="https://wu-hjj.github.io/">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23f4f0e5%22%20d%3D%22M0%200h32v32H0z%22%2F%3E%3Cg%20fill%3D%22%23f4f0e5%22%20stroke%3D%22%2325292d%22%20stroke-width%3D%221.25%22%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2216%22%20r%3D%2211%22%2F%3E%3Ccircle%20cx%3D%2226%22%20cy%3D%2216%22%20r%3D%221.8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="stylesheet" href="styles.css?v=7">
@@ -14,7 +15,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
     <header id="top" class="profile-header">
-      <img class="portrait" src="assets/portrait.jpg" alt="Hongjin Wu" width="208" height="208">
+      <img class="portrait" src="assets/portrait.jpg" alt="Hongjin Wu" width="208" height="208" data-alternate="assets/portrait-variant.jpg">
       <h1 class="name">Hongjin Wu</h1>
       <p>Hi! My name is Hongjin Wu. I am a postdoctoral researcher working with <a href="https://homepages.cwi.nl/~monique/">Monique Laurent</a> in the <a href="https://www.cwi.nl/en/research/networks-and-optimization/">Networks &amp; Optimization group</a> at CWI in Amsterdam. Previously, I recevied my Ph.D. in Oct. 2025 at ETH Zürich under the supervision of <a href="https://scholar.google.com/citations?user=fmmZrwgAAAAJ&amp;hl=en">Ulrik Brandes</a>, with <a href="https://people.math.ethz.ch/~abandeira/">Afonso Bandeira</a> as my second advisor.</p>
       <p class="job-market"><strong>I am on the job market for postdoctoral positions.</strong></p>
@@ -136,6 +137,8 @@
     <footer class="site-footer">© 2025 HJW</footer>
   </div>
   <script>
+    const portrait = document.querySelector('.portrait');
+    if (Math.random() < 0.1) portrait.src = portrait.dataset.alternate;
     const videoToggle = document.querySelector('.research-video-toggle');
     const videoPanel = document.getElementById('birds-video');
     videoToggle.addEventListener('click', (event) => {
