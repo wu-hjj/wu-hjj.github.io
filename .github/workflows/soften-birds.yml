@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Process audio, preserving the picture
         run: |
           ffmpeg -hide_banner -loglevel error -y -i assets/birds-rapperswill-2022-03-14.mp4 -filter_complex '[0:a]asplit=2[a][b];[a]volume=0.12[a1];[b]highpass=f=1700,volume=0.58[b1];[a1][b1]amix=inputs=2:duration=first:normalize=0[out]' -map 0:v:0 -map '[out]' -c:v copy -c:a aac -b:a 96k -movflags +faststart assets/birds-revised.mp4
