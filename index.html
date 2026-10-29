@@ -138,7 +138,13 @@
   </div>
   <script>
     const portrait = document.querySelector('.portrait');
-    if (Math.random() < 0.1) portrait.src = portrait.dataset.alternate;
+    if (Math.random() < 1 / 3) {
+      const alternative = new Image();
+      alternative.onload = () => { portrait.src = alternative.src; };
+      alternative.onerror = () => { /* Keep the original portrait if unavailable. */ };
+      alternative.src = portrait.dataset.alternate;
+    }
+    portrait.onerror = () => { portrait.onerror = null; portrait.src = 'assets/portrait.jpg'; };
     const videoToggle = document.querySelector('.research-video-toggle');
     const videoPanel = document.getElementById('birds-video');
     videoToggle.addEventListener('click', (event) => {
