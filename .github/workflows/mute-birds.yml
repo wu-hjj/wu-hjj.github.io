@@ -1,0 +1,27 @@
+name: Remove bird video audio
+on:
+  push:
+    paths:
+      - .github/workflows/mute-birds.yml
+permissions:
+  contents: write
+jobs:
+  mute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Remove entire audio track
+        run: |
+          ffmpeg -hide_banner -loglevel error -y -i assets/birds-rapperswill-2022-03-14.mp4 -map 0:v:0 -c:v copy -an -movflags +faststart assets/birds-muted.mp4
+          mv assets/birds-muted.mp4 assets/birds-rapperswill-2022-03-14.mp4
+          ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 assets/birds-rapperswill-2022-03-14.mp4 | tee /tmp/audiostreams.txt
+          test ! -s /tmp/audiostreams.txt
+      - name: Commit silent video
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/birds-rapperswill-2022-03-14.mp4
+          git commit -m 'Remove voice and all audio from birds video'
+          git push
