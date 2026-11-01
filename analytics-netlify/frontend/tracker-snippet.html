@@ -1,0 +1,10 @@
+<!-- Paste before </body> in the GitHub Pages homepage ONLY AFTER Netlify is deployed. -->
+<script>
+(() => {
+  try { if (localStorage.getItem('hjw_ignore_stats') === '1') return; } catch {}
+  if (navigator.doNotTrack === '1' || navigator.globalPrivacyControl === true) return;
+  const endpoint = 'https://REPLACE-WITH-YOUR-SITE.netlify.app/.netlify/functions/track';
+  fetch(endpoint, {method: 'POST', mode: 'cors', keepalive: true,
+    headers: {'Content-Type': 'text/plain'}, body: 'view'}).catch(() => {});
+})();
+</script>

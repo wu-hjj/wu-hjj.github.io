@@ -1,0 +1,8 @@
+{
+  "name": "hjw-city-analytics-netlify",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {"@netlify/blobs": "^11.1.6"},
+  "scripts": {"test": "node --test tests/*.test.mjs"}
+}
