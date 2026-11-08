@@ -142,7 +142,7 @@ section {
   gap: 22px;
   margin: 0;
   padding: 11px 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 0;
 }
 .publication-meta {
   padding-top: 3px;
@@ -180,7 +180,7 @@ section {
 .publication-abstract[open] > summary { list-style-type: disclosure-open; }
 .publication-abstract p { margin: 6px 0 0; font-size: 14px; font-weight: 400; line-height: 1.5; }
 .activity-list { display: block; margin: 0 0 14px; padding: 0; list-style: none; }
-.activity { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 22px; margin: 0; padding: 11px 0; border-bottom: 1px solid #000000; }
+.activity { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 22px; margin: 0; padding: 11px 0; border-bottom: 0; }
 .activity-meta { padding-top: 3px; font-family: inherit; font-size: 15px; line-height: 1.5; }
 .activity-meta time { display: block; margin-bottom: 4px; }
 .activity-meta span { display: block; font-size: 13px; }
@@ -189,10 +189,6 @@ section {
 .activity-body p { margin: 0 0 4px; }
 .activity-body ul { margin: 6px 0 0; padding-left: 21px; }
 .activity-body li { margin: 0 0 3px; }
-
-/* Section and footer borders provide the separator after each final list. */
-section > .publication-list:last-child > .publication:last-child,
-section > .activity-list:last-child > .activity:last-child { border-bottom: 0; }
 
 .talk-list, .experience-list, .project-list, #empirical-research ul {
   display: block;
