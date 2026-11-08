@@ -190,6 +190,10 @@ section {
 .activity-body ul { margin: 6px 0 0; padding-left: 21px; }
 .activity-body li { margin: 0 0 3px; }
 
+/* Section and footer borders provide the separator after each final list. */
+section > .publication-list:last-child > .publication:last-child,
+section > .activity-list:last-child > .activity:last-child { border-bottom: 0; }
+
 .talk-list, .experience-list, .project-list, #empirical-research ul {
   display: block;
   list-style: disc outside;
